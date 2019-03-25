@@ -1,0 +1,3 @@
+#!/bin/bash
+docker pull a3linux/myfedora
+docker run --rm -it --user 501:20 -v ~/fedora:/home/allen a3linux/myfedora
