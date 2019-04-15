@@ -2,6 +2,7 @@ FROM fedora:29
 
 RUN dnf update -y
 RUN dnf install -y vim-enhanced nodejs nodejs-yarn git-core python3-virtualenv aws-shell fzf powerline powerline-fonts the_silver_searcher ripgrep
+RUN dnf copr enable thindil/universal-ctags && dnf install universal-ctags
 RUN pip3 install autopep8 python-language-server
 RUN yarnpkg global add prettier eslint
 RUN /bin/bash -c 'curl -L -o /tmp/pt_linux_amd64.tar.gz https://github.com/monochromegane/the_platinum_searcher/releases/download/v2.2.0/pt_linux_amd64.tar.gz'
