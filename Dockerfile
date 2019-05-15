@@ -1,4 +1,4 @@
-FROM fedora:29
+FROM fedora:30
 
 RUN dnf update -y
 RUN dnf install -y vim-enhanced nodejs nodejs-yarn git-core python3-virtualenv aws-shell fzf powerline powerline-fonts the_silver_searcher ripgrep dnf-plugins-core
